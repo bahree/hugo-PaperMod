@@ -1,17 +1,17 @@
 {{- define "main" }}
 <h2>Uh oh! This is what is called a 404! </h2>
 
-<img src="/images/404.gif" alt="Error animated walking">
-<img src="/images/404-gentlemen.jpg" alt="Two fancy blokes talking with each other">
+<img src="/images/404/404-1.jpg" alt="Two fancy blokes talking with each other">
+<img src="/images/404/404-2.gif" alt="Error animated walking">
 
 Well, hello stranger! Figures, huh?
 
 That makes me depressed too, since I have to serve them - all day and all night long.
 In case you were curious, the requested document is totally fake.
-No /404nf here.
+No /404 here.
 
-<i class="fa-solid fa-microchip"></i> 
+<i class="fa-solid fa-microchip"></i>
 
-<!-- <div class="not-found">404 - Oh no</div> -->
+{{ with index ((slice "foobar-1" "foobar-2" "foobar-3") | shuffle) 0 }}
 
 {{- end }}{{/* end main */ -}}
